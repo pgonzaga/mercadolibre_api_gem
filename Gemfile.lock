@@ -3,6 +3,7 @@ PATH
   specs:
     mercadolibre_api (0.2)
       active_interaction (~> 3.6)
+      vcr (~> 4.0)
 
 GEM
   remote: https://rubygems.org/
@@ -92,7 +93,6 @@ DEPENDENCIES
   rake (~> 12.3)
   rspec (~> 3.8)
   rubocop (~> 0.59)
-  vcr (~> 4.0)
   webmock (~> 3.4)
 
 BUNDLED WITH

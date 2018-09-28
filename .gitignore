@@ -14,3 +14,4 @@
 .DS_Store
 *.gem
 .byebug_history
+lib/mercadolibre_api/cache/**/*.yml
