@@ -2,6 +2,7 @@ require 'bundler/setup'
 require 'vcr'
 require 'webmock'
 require 'mercadolibre_api'
+require 'byebug'
 
 RSpec.configure do |config|
   config.example_status_persistence_file_path = '.rspec_status'

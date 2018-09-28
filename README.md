@@ -1,7 +1,5 @@
 # MercadolibreApi
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/mercadolibre_api`. To experiment with that code, run `bin/console` for an interactive prompt.
-
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -20,9 +18,16 @@ Or install it yourself as:
 
 ## Usage
 
-### Products by seller
+### Products
+#### Find by ID
 
+```
+  MercadolibreApi::Products::Queries::Find.run!(product_id: 'MLU445694345')
+```
+
+### Products by seller
 #### Most sold
+
 ```
   MercadolibreApi::Sellers::Products::Queries::MostSold.run!(seller_id: 95592600, site_code: 'MLU')
 ```

@@ -1,5 +1,6 @@
 require 'active_interaction'
 require 'net/http'
+require './lib/mercadolibre_api/products/entities/product'
 
 module MercadolibreApi
   module Sellers
@@ -15,7 +16,7 @@ module MercadolibreApi
               JSON.parse(response.body, symbolize_names: true)[:results]
             end
 
-            results.flatten!
+            results.flatten.map { |r| MercadolibreApi::Products::Entities::Product.represent(r).as_json }
           end
 
           private
@@ -32,11 +33,13 @@ module MercadolibreApi
           end
 
           def base_uri(offset: 0)
-            if offset.positive?
-              URI("https://api.mercadolibre.com/sites/#{site_code}/search?seller_id=#{seller_id}&offset=#{offset}")
-            else
-              URI("https://api.mercadolibre.com/sites/#{site_code}/search?seller_id=#{seller_id}")
-            end
+            return URI("#{sites_api_url}/#{site_code}/search?seller_id=#{seller_id}") unless offset.positive?
+
+            URI("#{sites_api_url}/#{site_code}/search?seller_id=#{seller_id}&offset=#{offset}")
+          end
+
+          def sites_api_url
+            'https://api.mercadolibre.com/sites'
           end
         end
       end
