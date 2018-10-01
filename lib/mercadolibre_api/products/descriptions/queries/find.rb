@@ -1,6 +1,5 @@
 require 'active_interaction'
 require 'net/http'
-require './lib/mercadolibre_api/configurations/vcr'
 
 module MercadolibreApi
   module Products
@@ -11,11 +10,9 @@ module MercadolibreApi
           string :product_id
 
           def execute
-            VCR.use_cassette("get-product-#{product_id}-description-#{description_id}") do
-              response = Net::HTTP.get_response(description_uri)
-              response_body = JSON.parse(response.body, symbolize_names: true)
-              response_body.dig(:plain_text)
-            end
+            response = Net::HTTP.get_response(description_uri)
+            response_body = JSON.parse(response.body, symbolize_names: true)
+            response_body.dig(:plain_text)
           end
 
           private

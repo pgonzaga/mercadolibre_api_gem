@@ -10,11 +10,15 @@ RSpec.describe MercadolibreApi::Products::Queries::SoldQuantity do
 
   describe '#run!' do
     it 'returns the sold quantity visiting the website' do
-      expect(described_class.run!(product_url: product_url) > 1224).to eq true
+      VCR.use_cassette('get_product_website') do
+        expect(described_class.run!(product_url: product_url)).to eq 1224
+      end
     end
 
     it 'returns the sold quantity visiting the brazilian website' do
-      expect(described_class.run!(product_url: br_product_url) > 946).to eq true
+      VCR.use_cassette('get_product_from_br_website') do
+        expect(described_class.run!(product_url: br_product_url)).to eq 946
+      end
     end
   end
 end

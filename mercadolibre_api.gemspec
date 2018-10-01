@@ -22,7 +22,6 @@ Gem::Specification.new do |gem|
   gem.require_paths = ['lib']
 
   gem.add_dependency 'active_interaction', '~> 3.6'
-  gem.add_dependency 'vcr', '~> 4.0'
 
   gem.add_development_dependency 'bundler', '~> 1.16'
   gem.add_development_dependency 'byebug', '~> 10.0'
@@ -31,5 +30,6 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'rake', '~> 12.3'
   gem.add_development_dependency 'rspec', '~> 3.8'
   gem.add_development_dependency 'rubocop', '~> 0.59'
+  gem.add_development_dependency 'vcr', '~> 4.0'
   gem.add_development_dependency 'webmock', '~> 3.4'
 end
