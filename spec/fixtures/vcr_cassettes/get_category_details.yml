@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.mercadolibre.com/categories/MLU185195
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.mercadolibre.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1384'
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 02 Oct 2018 14:46:35 GMT
+      Cache-Control:
+      - max-age=600,stale-while-revalidate=300, stale-if-error=1200
+      X-Content-Type-Options:
+      - nosniff
+      X-Request-Id:
+      - c9740963-568f-4769-9f08-ecac09603330
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - PUT, GET, POST, DELETE, OPTIONS
+      Access-Control-Max-Age:
+      - '86400'
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 20c853d869457474bbc755009f594cf7.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - Kd42xvEIpWzGHKF3SARiXUjCimj1UQJohJuIenbtozEPJ15FRwBotw==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpZCI6Ik1MVTE4NTE5NSIsIm5hbWUiOiJWZW5kYXMgVGVyYXDDqXV0aWNhcyIsInBpY3R1cmUiOm51bGwsInBlcm1hbGluayI6bnVsbCwidG90YWxfaXRlbXNfaW5fdGhpc19jYXRlZ29yeSI6MTE4LCJwYXRoX2Zyb21fcm9vdCI6W3siaWQiOiJNTFUxMjQ2IiwibmFtZSI6IlNhbHVkIHkgQmVsbGV6YSJ9LHsiaWQiOiJNTFUxMjYwIiwibmFtZSI6IkN1aWRhZG8gZGVsIEN1ZXJwbyJ9LHsiaWQiOiJNTFUxODUxOTUiLCJuYW1lIjoiVmVuZGFzIFRlcmFww6l1dGljYXMifV0sImNoaWxkcmVuX2NhdGVnb3JpZXMiOltdLCJhdHRyaWJ1dGVfdHlwZXMiOiJhdHRyaWJ1dGVzIiwic2V0dGluZ3MiOnsiYWR1bHRfY29udGVudCI6ZmFsc2UsImJ1eWluZ19hbGxvd2VkIjp0cnVlLCJidXlpbmdfbW9kZXMiOlsiYnV5X2l0X25vdyIsImF1Y3Rpb24iXSwiY2F0YWxvZ19kb21haW4iOm51bGwsImNvdmVyYWdlX2FyZWFzIjoibm90X2FsbG93ZWQiLCJjdXJyZW5jaWVzIjpbIlVTRCIsIlVZVSJdLCJmcmFnaWxlIjpmYWxzZSwiaW1tZWRpYXRlX3BheW1lbnQiOiJvcHRpb25hbCIsIml0ZW1fY29uZGl0aW9ucyI6WyJub3Rfc3BlY2lmaWVkIiwibmV3IiwidXNlZCJdLCJpdGVtc19yZXZpZXdzX2FsbG93ZWQiOmZhbHNlLCJsaXN0aW5nX2FsbG93ZWQiOnRydWUsIm1heF9kZXNjcmlwdGlvbl9sZW5ndGgiOjUwMDAwLCJtYXhfcGljdHVyZXNfcGVyX2l0ZW0iOjEyLCJtYXhfcGljdHVyZXNfcGVyX2l0ZW1fdmFyIjoxMCwibWF4X3N1Yl90aXRsZV9sZW5ndGgiOjcwLCJtYXhfdGl0bGVfbGVuZ3RoIjo2MCwibWF4aW11bV9wcmljZSI6bnVsbCwibWluaW11bV9wcmljZSI6bnVsbCwibWlycm9yX2NhdGVnb3J5IjpudWxsLCJtaXJyb3JfbWFzdGVyX2NhdGVnb3J5IjpudWxsLCJtaXJyb3Jfc2xhdmVfY2F0ZWdvcmllcyI6W10sInByaWNlIjoicmVxdWlyZWQiLCJyZXNlcnZhdGlvbl9hbGxvd2VkIjoibm90X2FsbG93ZWQiLCJyZXN0cmljdGlvbnMiOltdLCJyb3VuZGVkX2FkZHJlc3MiOmZhbHNlLCJzZWxsZXJfY29udGFjdCI6Im5vdF9hbGxvd2VkIiwic2hpcHBpbmdfbW9kZXMiOlsiY3VzdG9tIiwibm90X3NwZWNpZmllZCIsIm1lMiIsIm1lMSJdLCJzaGlwcGluZ19vcHRpb25zIjpbImNhcnJpZXIiLCJjdXN0b20iXSwic2hpcHBpbmdfcHJvZmlsZSI6Im9wdGlvbmFsIiwic2hvd19jb250YWN0X2luZm9ybWF0aW9uIjpmYWxzZSwic2ltcGxlX3NoaXBwaW5nIjoib3B0aW9uYWwiLCJzdG9jayI6InJlcXVpcmVkIiwic3ViX3ZlcnRpY2FsIjpudWxsLCJzdWJzY3JpYmFibGUiOmZhbHNlLCJ0YWdzIjpbXSwidmVydGljYWwiOm51bGwsInZpcF9zdWJkb21haW4iOiJhcnRpY3VsbyJ9LCJtZXRhX2NhdGVnX2lkIjpudWxsLCJhdHRyaWJ1dGFibGUiOmZhbHNlfQ==
+    http_version: 
+  recorded_at: Tue, 02 Oct 2018 14:46:35 GMT
+recorded_with: VCR 4.0.0

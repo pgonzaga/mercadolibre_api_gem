@@ -18,6 +18,14 @@ Or install it yourself as:
 
 ## Usage
 
+### Categories
+#### Find by ID
+
+```
+  MercadolibreApi::Categories::Queries::Find.run!(category_id: 'MLU1246')
+```
+
+
 ### Products
 #### Find by ID
 
