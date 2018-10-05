@@ -1,5 +1,4 @@
 require 'grape-entity'
-require './lib/mercadolibre_api/products/entities/picture'
 
 module MercadolibreApi
   module Products

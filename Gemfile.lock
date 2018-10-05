@@ -1,8 +1,10 @@
 PATH
   remote: .
   specs:
-    mercadolibre_api (0.6)
+    mercadolibre_api (0.7)
       active_interaction (~> 3.6)
+      grape-entity (~> 0.7.1)
+      oga (~> 2.15)
 
 GEM
   remote: https://rubygems.org/
@@ -86,9 +88,7 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 1.16)
   byebug (~> 10.0)
-  grape-entity (~> 0.7.1)
   mercadolibre_api!
-  oga (~> 2.15)
   rake (~> 12.3)
   rspec (~> 3.8)
   rubocop (~> 0.59)
