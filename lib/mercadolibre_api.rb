@@ -1,6 +1,6 @@
-require 'mercadolibre_api/version'
+require 'require_all'
 
-Dir[File.join(__dir__, "/mercadolibre_api/**/*.rb")].each { |file| require file }
+require_all 'lib/mercadolibre_api'
 
 module MercadolibreApi
 end

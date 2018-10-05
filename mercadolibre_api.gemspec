@@ -22,6 +22,7 @@ Gem::Specification.new do |gem|
   gem.require_paths = ['lib']
 
   gem.add_dependency 'active_interaction', '~> 3.6'
+  gem.add_dependency 'require_all', '~> 2.0'
 
   gem.add_development_dependency 'bundler', '~> 1.16'
   gem.add_development_dependency 'byebug', '~> 10.0'
