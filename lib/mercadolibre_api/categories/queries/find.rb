@@ -1,6 +1,5 @@
 require 'active_interaction'
 require 'net/http'
-require './lib/mercadolibre_api/categories/entities/category'
 
 module MercadolibreApi
   module Categories

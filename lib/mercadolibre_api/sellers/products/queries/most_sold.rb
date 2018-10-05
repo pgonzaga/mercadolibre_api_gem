@@ -1,6 +1,5 @@
 require 'active_interaction'
 require 'net/http'
-require './lib/mercadolibre_api/products/entities/product'
 
 module MercadolibreApi
   module Sellers

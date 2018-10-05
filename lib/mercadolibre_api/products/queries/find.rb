@@ -1,8 +1,5 @@
 require 'active_interaction'
 require 'net/http'
-require './lib/mercadolibre_api/products/entities/product'
-require './lib/mercadolibre_api/products/descriptions/queries/find'
-require './lib/mercadolibre_api/products/queries/sold_quantity'
 
 module MercadolibreApi
   module Products

@@ -1,5 +1,4 @@
 require 'active_interaction'
-require './lib/mercadolibre_api/sites/queries/get_code'
 
 module MercadolibreApi
   module Products
