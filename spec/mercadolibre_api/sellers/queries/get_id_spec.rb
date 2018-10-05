@@ -1,5 +1,3 @@
-require './lib/mercadolibre_api/sellers/queries/get_id'
-
 RSpec.describe MercadolibreApi::Sellers::Queries::GetID do
   it 'returns nil when URL is an invalid one' do
     VCR.use_cassette('get_seller_id_not_found') do

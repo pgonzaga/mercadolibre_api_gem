@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    mercadolibre_api (0.2)
+    mercadolibre_api (0.4)
       active_interaction (~> 3.6)
 
 GEM

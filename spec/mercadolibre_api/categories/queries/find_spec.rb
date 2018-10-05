@@ -1,5 +1,3 @@
-require './lib/mercadolibre_api/categories/queries/find'
-
 RSpec.describe MercadolibreApi::Categories::Queries::Find do
   describe '#run!' do
     it 'returns the category data' do

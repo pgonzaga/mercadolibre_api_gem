@@ -1,5 +1,3 @@
-require './lib/mercadolibre_api/products/queries/sold_quantity'
-
 RSpec.describe MercadolibreApi::Products::Queries::SoldQuantity do
   let(:product_url) do
     'https://articulo.mercadolibre.com.uy/MLU-445694345-venda-kinesiologica-cinta-terapeutica-tape-deportiva-5mx5cm-_JM'

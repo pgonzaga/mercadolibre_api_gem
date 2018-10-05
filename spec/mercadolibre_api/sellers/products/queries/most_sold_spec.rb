@@ -1,5 +1,3 @@
-require './lib/mercadolibre_api/sellers/products/queries/most_sold'
-
 RSpec.describe MercadolibreApi::Sellers::Products::Queries::MostSold do
   describe '#search_uris' do
     it 'returns the right search URIs' do

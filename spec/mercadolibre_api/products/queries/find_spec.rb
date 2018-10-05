@@ -1,5 +1,3 @@
-require './lib/mercadolibre_api/products/queries/find'
-
 RSpec.describe MercadolibreApi::Products::Queries::Find do
   describe '#run!' do
     it 'returns the product with description' do
