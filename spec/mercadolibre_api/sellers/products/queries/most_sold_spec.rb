@@ -24,5 +24,12 @@ RSpec.describe MercadolibreApi::Sellers::Products::Queries::MostSold do
         expect(result[184][:id]).to eq('MLU445743927')
       end
     end
+
+    it 'returns an empty array' do
+      VCR.use_cassette('search_seller_with_invalid_site_code') do
+        result = described_class.run!(seller_id: 95_592_600, site_code: 'MLU-1')
+        expect(result.length).to eq(0)
+      end
+    end
   end
 end

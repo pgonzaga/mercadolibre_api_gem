@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    mercadolibre_api (0.9)
+    mercadolibre_api (0.10)
       active_interaction (~> 3.6)
       grape-entity (~> 0.7.1)
       oga (~> 2.15)

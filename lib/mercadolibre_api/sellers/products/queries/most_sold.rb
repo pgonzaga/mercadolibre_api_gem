@@ -24,6 +24,8 @@ module MercadolibreApi
             response = Net::HTTP.get_response(base_uri)
             response_data = JSON.parse(response.body, symbolize_names: true)
 
+            return [] unless response.code == '200'
+
             total_products = response_data.dig(:paging, :total)
             product_limit = response_data.dig(:paging, :limit)
             total_calls = (total_products / product_limit).to_i
