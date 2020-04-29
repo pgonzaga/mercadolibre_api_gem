@@ -23,7 +23,7 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency 'active_interaction', '~> 3.6'
   gem.add_dependency 'grape-entity', '~> 0.7.1'
-  gem.add_dependency 'oga', '~> 2.15'
+  gem.add_dependency 'oga', '>= 2.15', '< 4.0'
 
   gem.add_development_dependency 'bundler', '~> 1.16'
   gem.add_development_dependency 'byebug', '~> 10.0'
