@@ -22,7 +22,7 @@ GEM
       public_suffix (>= 2.0.2, < 4.0)
     ansi (1.5.0)
     ast (2.4.0)
-    byebug (10.0.2)
+    byebug (11.1.3)
     concurrent-ruby (1.0.5)
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
@@ -87,7 +87,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 1.16)
-  byebug (~> 10.0)
+  byebug (~> 11.1)
   mercadolibre_api!
   rake (~> 12.3)
   rspec (~> 3.8)
