@@ -25,7 +25,7 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'grape-entity', '~> 0.7.1'
   gem.add_dependency 'oga', '~> 2.15'
 
-  gem.add_development_dependency 'bundler', '~> 1.16'
+  gem.add_development_dependency 'bundler', '~> 2.2'
   gem.add_development_dependency 'byebug', '~> 10.0'
   gem.add_development_dependency 'rake', '~> 12.3'
   gem.add_development_dependency 'rspec', '~> 3.8'
