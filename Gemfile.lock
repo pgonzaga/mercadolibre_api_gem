@@ -45,7 +45,7 @@ GEM
     powerpack (0.1.2)
     public_suffix (3.0.3)
     rainbow (3.0.0)
-    rake (12.3.1)
+    rake (13.0.4)
     rspec (3.8.0)
       rspec-core (~> 3.8.0)
       rspec-expectations (~> 3.8.0)
@@ -89,7 +89,7 @@ DEPENDENCIES
   bundler (~> 1.16)
   byebug (~> 10.0)
   mercadolibre_api!
-  rake (~> 12.3)
+  rake (~> 13.0)
   rspec (~> 3.8)
   rubocop (~> 0.59)
   vcr (~> 4.0)
